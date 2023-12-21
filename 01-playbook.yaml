@@ -1,5 +1,6 @@
 - name: This is first playbook. Pinging a server
+  hosts:
   tasks:
   - name: ping the server
     ansible.buitin.ping:
-  hosts:
+  
