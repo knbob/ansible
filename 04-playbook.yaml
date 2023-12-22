@@ -15,5 +15,5 @@
     ansible.builtin.package:
       name: nginx
       state: absent
-    ansible.builtin.debug:
-      msg: "nginx uninstalled"
+    # ansible.builtin.debug:
+    #   msg: "nginx uninstalled"
