@@ -4,3 +4,7 @@
   - name: This is task name.
     ansible.builtin.debug:
       msg: " this msg under task"
+
+  - name: this is another task
+    ansible.builtin.debug:
+      msg: this is under another task.
