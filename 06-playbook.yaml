@@ -1,0 +1,13 @@
+- name: Play book name.
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: Task1
+    ansible.builtin.debug:
+      msg: Task1-Printing job task
+  - name: Task2
+    ansible.builtin.debug:
+      msg: Task2-Printing job Task2
+  - name: Task3
+    ansible.builtin.debug:
+      msg: Task3-Priniting job Task3
