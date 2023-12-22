@@ -11,6 +11,7 @@
 
 - name: play2
   hosts: web
+  become: yes
   tasks:
   - name: This task on remote node
     ansible.builtin.package:
