@@ -1,0 +1,19 @@
+- name: play1
+  hosts: localhost
+  tasks:
+  - name: This is task1
+    ansible.builtin.debug:
+      msg: "Hi, I am learning DevOps"
+  - name: This is task2
+    ansible.builtin.debug:
+      msg: " Hi, this is from 2nd task. I am learning "
+
+- name: play2
+  hosts: web
+  tasks:
+  - name: This is task on remote node
+    ansible.builtin.package:
+      name: nginx
+      state: absent
+    ansible.builtin.debug:
+      msg: "nginx uninstalled"
