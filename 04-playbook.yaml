@@ -11,7 +11,7 @@
 - name: play2
   hosts: web
   tasks:
-  - name: This is task on remote node
+  - name: This task on remote node
     ansible.builtin.package:
       name: nginx
       state: absent
